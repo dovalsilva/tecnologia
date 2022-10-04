@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* FONTE IMPORTADA*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* FONTE BAIXADA*/
+@font-face {
+    font-family: 'Androi';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*DECLARAÇÃO DE VARIÁVEIS GLOBAIS*/
+:root {
+
+    --cor0: #365a5e;
+    --cor1: #007172;
+    --cor2: #F29325;
+    --cor3: #0a72ad;
+    --cor4: #F4E2DE;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Open Sans', sans-serif;
+    --fonte-android: 'Android' , cursive;
+}
+
+/*REMOVER MARGENS DIVERSAS*/
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+/*CORPO DO SITE*/
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+}
+
+/*INSERIR MARCADOR GLOBAL EMOJI*/
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+/* CABEÇALHO DO SITE*/
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.708);   
+}
+
+
+header > p {
+    color: white;
+    font-family: var(--fonte-android);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.708); 
+}
+
+/*MENU PRINCIPAL*/
+nav {
+    
+    background-color: #5febeb;
+    padding: 10px;
+    box-shadow: 0px 7px 9px black;
+}
+
+nav > a {
+    color: rgb(17, 61, 143);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav > a:hover {
+    background-color: #eb770b;
+    color: #e9e50a;
+}
+
+/*DIVISÃO CONTEÚDO PRINCIPAL DENTRO DO <BODY> */
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(143, 210, 236, 0.938);
+    background-color: var(--cor4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 5px;
+}
+
+
+main img {
+    width: 100%;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+
+main strong {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    background-color: var(--cor3);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #F29325;
+}
+
+
+/*  main iframe {
+        
+    width: 100%;
+}*/
+
+
+/*DIVISÃO DE COUTEÚDO VÍDEOS DENTRO <MAIN>*/
+div.video {
+    background-color: #a0ced6;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58.5%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    }
+
+ /*DIVISÃO CONTEÚDO TEXTO DENTRO DO <MAIN>*/ 
+aside {
+    background-color: #b9dff8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486);
+    }
+
+aside p {
+    text-align: justify;
+    }
+
+    aside > h3 {
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+} 
+  
+aside > h4 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0'; /* Marcadores não compativeis com todos navegadores*/
+    list-style-position: inside;
+    columns: 2;
+    font-size: 1em;
+    line-height: 2em;
+}
+/*RODA PÉ SITE*/
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer  a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #eb770b;
+
+}
