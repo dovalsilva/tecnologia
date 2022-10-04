@@ -5,7 +5,7 @@
 
 /* FONTE BAIXADA*/
 @font-face {
-    font-family: 'Androi';
+    font-family: 'Android';
     src: url('/fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
@@ -52,8 +52,8 @@ header {
 
 header > h1 {
     color: white;
-    font-family: var(--fonte-android);
-    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.708);   
 }
