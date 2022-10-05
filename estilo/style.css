@@ -32,7 +32,9 @@
 
 /*CORPO DO SITE*/
 body {
-    background-color: var(--cor0);
+    /*background-image: url('imagens/planofundoazul.jpg');*/
+    
+   background-color: var(--cor0);
     font-family: var(--fonte-destaque);
 }
 
@@ -158,6 +160,26 @@ main a:hover {
 }*/
 
 
+div.quadrado{
+    
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    width: 325px;
+    height: 325px;   
+}
+
+div#q1{
+    
+}
+div#q2{
+
+}
+
+div#q3{
+
+}
 /*DIVISÃO DE COUTEÚDO VÍDEOS DENTRO <MAIN>*/
 div.video {
     background-color: #a0ced6;
